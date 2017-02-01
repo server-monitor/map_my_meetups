@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= render 'layouts/navbar_collapse_button' %>
+      <%= render 'layouts/brand' %>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'Home', root_path %></li>
+        <% title = current_user ? (current_user == User::GUEST ? '' : 'My ') : '' %>
+        <li><%= link_to title + 'Meetups', map_meetup_events_path %>
+
+        <!-- DEBUG, hacks... -->
+        <li><%= link_to 'OpenStreetMap', leaflet_meetup_events_path %>
+        <li><%= link_to 'List', meetup_events_path %></li>
+        <li><%= link_to 'Resque', '/jobs' %></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <%= render 'layouts/user_resource_links' %>
+      </ul>
+    </div>
+  </div>
+</nav>

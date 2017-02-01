@@ -1,0 +1,51 @@
+
+@import "bootstrap";
+
+// START: Keep the footer at the bottom.
+// http://cbracco.me/css-sticky-footer-effect/
+// CSS sticky (but not fixed) footer
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+// END: Keep the footer at the bottom.
+
+body {
+  // START: Keep the footer at the bottom.
+  // http://cbracco.me/css-sticky-footer-effect/
+  // CSS sticky (but not fixed) footer
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  // END: Keep the footer at the bottom.
+
+  footer {
+    font-size: 12px;
+    // START: Keep the footer at the bottom.
+    // http://cbracco.me/css-sticky-footer-effect/
+    // CSS sticky (but not fixed) footer
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // END: Keep the footer at the bottom.
+
+    background: black;
+    color: white;
+
+    ul.list-inline {
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+      a { color: gray; }
+      a:hover { color: white; }
+    }
+  }
+}

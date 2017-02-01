@@ -1,0 +1,20 @@
+
+<%= form_tag meetup_events_path, remote: true do %>
+  <div class="row row-grid">
+    <div class="col-md-9">
+      <%= text_field_tag 'input_text', nil,
+            placeholder: 'Enter meetup event or group link, or keyword',
+            class: 'form-control'
+      %>
+    </div>
+    <div class="col-md-3">
+      <%= submit_tag 'Submit', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
+
+<div class="row row-grid">
+  <div class="col-md-12">
+    <hr>
+  </div>
+</div>

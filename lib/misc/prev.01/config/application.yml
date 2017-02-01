@@ -1,0 +1,10 @@
+
+# ... edited by app generator
+GOOGLE_API_KEY: AIzaSyAFWvgY1vDOTRIrNmGNpez013qfKxt7AsI
+MAPZEN_SEARCH_API_KEY: search-XChrYmQ
+
+# ...
+MEETUP_API_KEY: 5813725d313f494b40317336e6534a
+
+# Number of events to process when doing keyword search.
+EVENTS: '100'

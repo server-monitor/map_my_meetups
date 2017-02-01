@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.meetup.com/ocruby/events/232306607/?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Aug 2016 11:07:28 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '692'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8beef9179d0bba23478fc1197fcfe2e31471000048; expires=Sat, 12-Aug-17
+        11:07:28 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api2
+      X-Meetup-Request-Id:
+      - 24759845-ee68-494d-9f7c-dd1e2aa3e141
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '10'
+      Etag:
+      - '"f32f6dd7c4c7db4247d996d79d388872"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d1376bdf0ce22e8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"created":1416523547000,"id":"npbsclyvkblc","name":"Orange County
+        Ruby Users Group (OCRuby) Meetup","status":"past","time":1469152800000,"updated":1469164925000,"utc_offset":-25200000,"waitlist_count":0,"yes_rsvp_count":19,"venue":{"id":21898262,"name":"Eureka
+        Bldg","lat":33.69908142089844,"lon":-117.84720611572266,"repinned":false,"address_1":"1621
+        Alton Parkway","city":"Irvine","country":"us","localized_country_name":"USA","zip":"","state":"CA"},"group":{"created":1284014612000,"name":"Orange
+        County Ruby Users Group (OCRuby)","id":1703989,"join_mode":"open","lat":33.68000030517578,"lon":-117.83000183105469,"urlname":"ocruby","who":"Rocking
+        Rubyists"},"link":"http://www.meetup.com/ocruby/events/232306607/","description":"<p>Location
+        is Atrium</p> <p>6:30: Doors open, socialize<br/>7:00: Presentations</p> <p>\u2022
+        Real life port of JS -&gt; Ruby, why Object Oriented and Components make a
+        difference - Forrest</p> <p><br/>\u2022 Kemal - A Sinatra equivalent for Crystal
+        - Michael</p> <p><br/>\u2022 Web scraper in Elixir - Vincent</p> <p><br/>After
+        that: free for all</p> ","visibility":"public"}'
+    http_version: 
+  recorded_at: Fri, 12 Aug 2016 11:07:28 GMT
+recorded_with: VCR 3.0.3

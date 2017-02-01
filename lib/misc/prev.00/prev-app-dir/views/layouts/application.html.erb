@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map My Meetups</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <script src="//maps.google.com/maps/api/js?v=3.23&key=<%= ENV['GOOGLE_API_KEY'] %>"></script>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navbar' %>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= bootstrap_flash %>
+          <%= yield %>
+          <%= insert_paloma_hook %>
+        </div>
+      </div>
+    </div>
+
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
+
+<!-- ... edited by app generator -->

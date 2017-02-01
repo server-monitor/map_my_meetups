@@ -1,0 +1,26 @@
+
+.form {
+  padding: 10px;
+  border-radius: 8px;
+  width: 40%;
+  position: relative;
+  top: 340px;
+
+  // !!TESTING, DEBUG!!
+  // background-color: rgba(235, 16, 30, 0.55);
+  background-color: rgba(0, 128, 0, 0.75);
+
+  // Original color color-picked from the site.
+  // background-color: rgba(208, 16, 49, 0.55);
+  z-index: 1;
+
+  .alert-danger {
+    z-index: 1;
+  }
+
+  h4 {
+    &.title {
+      color: darken(white, 5%);
+    }
+  }
+}

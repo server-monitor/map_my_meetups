@@ -1,0 +1,2 @@
+
+//= require ./meetup_events

@@ -1,0 +1,55 @@
+
+// @import "bootstrap";
+
+// Same color as red Bootstrap button.
+$theme-color: rgba(0, 128, 0, 1);
+
+body {
+  // Something is setting this to border/radius > 0.
+  // Not sure if I set this elsewhere or if it's Bootstrap doing this.
+  .navbar {
+    // !! DEBUG/HACK: font-size, will break if navbar height is changed.
+    font-size: 12px;
+    border: 0;
+    border-radius: 0;
+    a {
+      // !! DEBUG/HACK: font-size, will break if navbar height is changed.
+      font-size: 12px;
+    }
+    z-index: 1;
+  }
+
+  // Hard-coded padding 9 will break if you change navbar height.
+  // TODO: find out how to make this auto adjustable.
+  .navbar-toggle {
+    padding: 9px;
+    border: 0;
+  }
+
+  .navbar-brand {
+    font-size: 12px;
+    padding-top: $navbar-padding-vertical;
+    padding-bottom: $navbar-padding-vertical;
+  }
+
+  .navbar-nav > li > a, p {
+    padding-left: 8px;
+  }
+
+  .navbar-nav > li > a {
+    padding-right: 8px;
+  }
+
+  .navbar-brand-2 {
+    color: white;
+    // Theme color matched with btn-primary color using class of same name.
+    background-color: $theme-color;
+    border-radius: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  // .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  //   background-color: $theme-color;
+  // }
+}

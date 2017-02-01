@@ -1,0 +1,34 @@
+
+<!-- ... edited by app generator -->
+<%= form_for(meetup_event, remote: true, url: meetup_events_path(format: :js)) do |f| %>
+  <% if meetup_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meetup_event.errors.count, "error") %> prohibited this meetup_event from being saved:</h2>
+
+      <ul>
+      <% meetup_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row row-grid">
+    <div class="col-md-6">
+      <%= f.text_field :search_input,
+                       placeholder: 'Enter meetup event or group link, or keyword',
+                       class: 'form-control' %>
+    </div>
+
+    <div class="col-md-2">
+      <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    </div>
+
+    <div class="col-md-2">
+      <% if defined?(from_map) and !from_map.blank? %>
+        <%= f.hidden_field :from_map, value: from_map %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+

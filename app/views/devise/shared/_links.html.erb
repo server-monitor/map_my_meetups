@@ -1,0 +1,52 @@
+
+<% bootstrap_marker = 'btn-default' %>
+<% class_param = { class: "btn #{bootstrap_marker} btn-md" } %>
+
+<% hr_shown = false %>
+
+<%- if controller_name != 'sessions' and
+    (controller_name == 'registrations' and action_name != 'edit') %>
+
+  <%= generic_button 'Log in', new_session_path(resource_name) %>
+<% end -%>
+
+
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= generic_button 'Sign up', new_registration_path(resource_name) %>
+<% end -%>
+
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' &&
+       controller_name != 'registrations' %>
+    <%= generic_button 'Forgot your password?',
+                                        new_password_path(resource_name) %>
+<% end -%>
+
+<!-- =+= action_name != 'edit', I don't know why this was not present.
+      I'm assuming if you get to the edit page, then the account is already confirmed
+      and currently unlocked. -->
+
+<%- if devise_mapping.confirmable? && controller_name != 'confirmations' &&
+       action_name != 'edit' %>
+  <%= generic_button(
+        "Didn't receive confirmation instructions?",
+        new_confirmation_path(resource_name)
+      )
+  %>
+<% end -%>
+
+<%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) &&
+       controller_name != 'unlocks' &&
+       action_name != 'edit' %>
+  <%= generic_button "Didn't receive unlock instructions?",
+                                      new_unlock_path(resource_name) %>
+<% end -%>
+
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <%= generic_button(
+          "Sign in with #{provider.to_s.titleize}",
+          omniauth_authorize_path(resource_name, provider)
+        )
+    %>
+  <% end -%>
+<% end -%>

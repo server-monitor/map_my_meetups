@@ -1,0 +1,17 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  // font-family: Ubuntu, Tahoma, Arial, Helvetica, Sans-Serif;
+
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+
+  // background-color: lighten(gray, 10%);
+
+  .alert {
+    font-size: 15px;
+  }
+}

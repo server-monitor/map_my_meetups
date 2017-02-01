@@ -1,0 +1,37 @@
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(
+      resource, as: resource_name, url: registration_path(resource_name),
+      html: { method: :put, class: 'form-horizontal' }
+    ) do |f| %>
+  <%= devise_error_messages! %>
+
+  <%= form_group_for f, :email do
+        field_for f, :email_field, :email, autofocus: true
+      end
+  %>
+
+  <%= form_group_for f, :name %>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <%= password_form_group_for f, placeholder: "Leave blank if you don't want to change it" %>
+
+  <%= password_form_group_for f, :password_confirmation %>
+
+  <%= password_form_group_for(
+        f, :current_password,
+        placeholder: 'We need your current password to confirm your changes'
+      )
+  %>
+
+  <%= button_for f, :submit, 'Update' %>
+<% end %>
+
+<%= generic_button(
+      'Delete account', registration_path(resource_name), nil,
+      options: { data: { confirm: "Are you sure?" }, method: :delete }
+    )
+%>

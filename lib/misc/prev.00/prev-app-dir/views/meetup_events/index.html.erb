@@ -1,0 +1,39 @@
+
+<!-- ... edited by app generator -->
+<h4 class="title"><%= @display_title %></h4>
+
+<%= render 'form', meetup_event: @meetup_event %>
+
+<hr>
+
+<div class="table-responsive">
+  <table class="table table-fill">
+    <thead>
+      <tr>
+        <th>Requested by</th>
+        <th>Event</th>
+        <th>Venue</th>
+        <th>Address</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+    </thead>
+
+    <tbody id="geo_data">
+      <% @meetup_events.each do |meetup_event| %>
+        <tr data-id="<%= meetup_event.id %>">
+          <td><%= meetup_event.user %></td>
+          <td><%= meetup_event.name %></td>
+          <td><%= meetup_event.venue_name %></td>
+          <td><%= meetup_event.venue.address %></td>
+          <td><%= meetup_event.venue.latitude %></td>
+          <td><%= meetup_event.venue.longitude %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<%= render 'delete_all_hack' %>

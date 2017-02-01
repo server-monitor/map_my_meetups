@@ -1,0 +1,543 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.meetup.com/laruby/?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1472'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5afa47ceac43703518a2318d41efd3d91470910911; expires=Fri, 11-Aug-17
+        10:21:51 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api10
+      X-Meetup-Request-Id:
+      - b6354574-9849-412b-8798-53751361f255
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '10'
+      Etag:
+      - '"183280fb8ab62152cda6363a08c4eaf0"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af68e75110d67-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":335039,"name":"The Los Angeles Ruby/Rails Meetup Group","link":"http://www.meetup.com/laruby/","urlname":"laruby","description":"<p>Welcome
+        to the Los Angeles Ruby/Rails Meetup Group.&nbsp; This is a thriving developers
+        community through the efforts of everyone involved. &nbsp;&nbsp;Members generally
+        refer to this group as \"LA Ruby\". We also have postings where we are referred
+        to as \"laruby\" and even \"la-ruby\".</p>\n<p><strong>The Los Angeles Ruby/Rails
+        Meetup Group</strong> is for anyone interested in learning or sharing experiences
+        with \"Ruby\" or \"Ruby on Rails\". <br> <br> We meet the second Thursday
+        of each month. The location of the Meetup depends on who is sponsoring. We
+        attempt to rotate between West-side and Northeast side. <br> <br> <strong>Speaker
+        Proposals:</strong> If you have a pertinent subject matter that you''d like
+        to present to the group at an upcoming meetup - please contact myself (claudio)
+        - with a short bio and description of your presentation.</p>\n<p><strong>Membership:</strong>
+        This is a PRIVATE organization. &nbsp;We have the right to deny anyone membership.
+        &nbsp;If you wish to join, you must fill out the&nbsp;questionnaire&nbsp;truthfully
+        and completely. Please tell us both your FIRST AND LAST NAME. If you do not
+        supply your full name - you will be asked to supply a link to your LinkedIn
+        profile.&nbsp; <br> <br> <strong>IF IT IS YOUR INTENTION TO JOIN JUST TO RECRUIT
+        DEVELOPERS: Don''t bother. &nbsp;We will not allow you access.</strong> <br>
+        <br> Best Regards, <br> <strong>Claudio</strong> <br> LA Ruby Meetup Organizer</p>","created":1159662879000,"city":"Los
+        Angeles","country":"US","localized_country_name":"USA","state":"CA","join_mode":"approval","visibility":"public","lat":34.05,"lon":-118.24,"members":1892,"organizer":{"id":13339804,"name":"Claudio
+        B.","bio":"","photo":{"id":20602621,"highres_link":"http://photos3.meetupstatic.com/photos/member/5/8/5/d/highres_20602621.jpeg","photo_link":"http://photos3.meetupstatic.com/photos/member/5/8/5/d/member_20602621.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/member/5/8/5/d/thumb_20602621.jpeg"}},"who":"Ruby
+        programmers","group_photo":{"id":447471359,"highres_link":"http://photos4.meetupstatic.com/photos/event/c/8/9/f/highres_447471359.jpeg","photo_link":"http://photos2.meetupstatic.com/photos/event/c/8/9/f/600_447471359.jpeg","thumb_link":"http://photos2.meetupstatic.com/photos/event/c/8/9/f/thumb_447471359.jpeg"},"key_photo":{"id":450919088,"highres_link":"http://photos2.meetupstatic.com/photos/event/4/a/9/0/highres_450919088.jpeg","photo_link":"http://photos4.meetupstatic.com/photos/event/4/a/9/0/600_450919088.jpeg","thumb_link":"http://photos4.meetupstatic.com/photos/event/4/a/9/0/thumb_450919088.jpeg"},"timezone":"US/Pacific","next_event":{"id":"svtbnlyvlbpb","name":"LA
+        Ruby / Ruby on Rails Monthly Meetup","yes_rsvp_count":32,"time":1470967200000,"utc_offset":-25200000},"category":{"id":34,"name":"Tech","shortname":"Tech","sort_name":"Tech"},"photos":[{"id":421381172,"highres_link":"http://photos1.meetupstatic.com/photos/event/4/9/4/highres_421381172.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/4/9/4/600_421381172.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/4/9/4/thumb_421381172.jpeg"},{"id":421383112,"highres_link":"http://photos1.meetupstatic.com/photos/event/c/2/8/highres_421383112.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/c/2/8/600_421383112.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/c/2/8/thumb_421383112.jpeg"},{"id":421383172,"highres_link":"http://photos3.meetupstatic.com/photos/event/c/6/4/highres_421383172.jpeg","photo_link":"http://photos3.meetupstatic.com/photos/event/c/6/4/600_421383172.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/event/c/6/4/thumb_421383172.jpeg"},{"id":421388952,"highres_link":"http://photos2.meetupstatic.com/photos/event/2/2/f/8/highres_421388952.jpeg","photo_link":"http://photos2.meetupstatic.com/photos/event/2/2/f/8/600_421388952.jpeg","thumb_link":"http://photos4.meetupstatic.com/photos/event/2/2/f/8/thumb_421388952.jpeg"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:54 GMT
+- request:
+    method: get
+    uri: https://api.meetup.com/laruby/events/svtbnlyvlbpb?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3ace0b50c0b9dfe62eb61b468257c7d01470910912; expires=Fri, 11-Aug-17
+        10:21:52 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api13
+      X-Meetup-Request-Id:
+      - fc62074b-3b42-41ac-9737-80f9a181c3c7
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '28'
+      X-Ratelimit-Reset:
+      - '9'
+      Etag:
+      - '"f35655b0effc7fae695a4b1f12589f01"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af691f9ec22e8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoxNDUwNzQ4NTc3MDAwLCJpZCI6InN2dGJubHl2bGJwYiIs
+        Im5hbWUiOiJMQSBSdWJ5IC8gUnVieSBvbiBSYWlscyBNb250aGx5IE1lZXR1
+        cCIsInN0YXR1cyI6InVwY29taW5nIiwidGltZSI6MTQ3MDk2NzIwMDAwMCwi
+        dXBkYXRlZCI6MTQ3MDg0Mjg1OTAwMCwidXRjX29mZnNldCI6LTI1MjAwMDAw
+        LCJ3YWl0bGlzdF9jb3VudCI6MCwieWVzX3JzdnBfY291bnQiOjMyLCJ2ZW51
+        ZSI6eyJpZCI6MjQ2NzQ4OTQsIm5hbWUiOiJQaXZvdGFsIExhYnMiLCJsYXQi
+        OjM0LjAxNTcxNjU1MjczNDM3NSwibG9uIjotMTE4LjQ5NzQ3NDY3MDQxMDE2
+        LCJyZXBpbm5lZCI6ZmFsc2UsImFkZHJlc3NfMSI6IjEzMzMgMm5kIFN0cmVl
+        dCwgMm5kIEZsb29yIiwiY2l0eSI6IlNhbnRhIE1vbmljYSIsImNvdW50cnki
+        OiJ1cyIsImxvY2FsaXplZF9jb3VudHJ5X25hbWUiOiJVU0EiLCJ6aXAiOiIi
+        LCJzdGF0ZSI6IkNBIn0sImdyb3VwIjp7ImNyZWF0ZWQiOjExNTk2NjI4Nzkw
+        MDAsIm5hbWUiOiJUaGUgTG9zIEFuZ2VsZXMgUnVieS9SYWlscyBNZWV0dXAg
+        R3JvdXAiLCJpZCI6MzM1MDM5LCJqb2luX21vZGUiOiJhcHByb3ZhbCIsImxh
+        dCI6MzQuMDQ5OTk5MjM3MDYwNTUsImxvbiI6LTExOC4yMzk5OTc4NjM3Njk1
+        MywidXJsbmFtZSI6ImxhcnVieSIsIndobyI6IlJ1YnkgcHJvZ3JhbW1lcnMi
+        fSwibGluayI6Imh0dHA6Ly93d3cubWVldHVwLmNvbS9sYXJ1YnkvZXZlbnRz
+        LzIzMjYwNDQxMS8iLCJkZXNjcmlwdGlvbiI6IjxwPlRoaXMgbW9udGgncyBt
+        ZWV0dXAgd2lsbCBiZSBoZWxkIGF0IFBpdm90YWwgTGFicywgMTMzMyAybmQg
+        U3RyZWV0LCAybmQgZmxvb3IsIFNhbnRhIE1vbmljYSwgQ0EuPC9wPiA8cD43
+        OjAwIFx1MjAxMyA3OjE1IE9wZW48YnIvPjc6MTUgXHUyMDEzIDc6MzAgSW50
+        cm9kdWN0aW9uczxici8+NzozMCBcdTIwMTMgOTowMCBQcmVzZW50YXRpb25z
+        PGJyLz45OjAwIFx1MjAxMyAxMDowMCBPcGVuIC8gTmV0d29ya2luZzwvcD4g
+        PHA+PGJyLz48Yj5QcmVzZW50YXRpb25zPC9iPjwvcD4gPHA+PGI+MSkgTWFr
+        ZSBNb25leSBhbmQgRW5qb3kgRnJlZWRvbSBDcmVhdGluZyBhIFNvZnR3YXJl
+        IEJ1c2luZXNzPC9iPjwvcD4gPHA+SSdtIGJ5IG5vIG1lYW5zIHRoZSBiZXN0
+        IHByb2dyYW1tZXIgKE1vc3QgcGVvcGxlIHByb2JhYmx5IHdvdWxkbid0IGV2
+        ZW4gY29uc2lkZXIgbWUgYW4gZXhwZXJ0KSBidXQgSSd2ZSBtYW5hZ2VkIHRv
+        IGJ1aWxkIGFuZCBydW4gYSBmZXcgc3VjY2Vzc2Z1bCBzb2Z0d2FyZSBidXNp
+        bmVzc2VzLiBJIGNyZWF0ZWQganVpY2VyLmlvLCBhIHNvY2lhbCBtZWRpYSBh
+        Z2dyZWdhdG9yLCBhbmQgSSd2ZSBhdHRlbmRlZCBZQ29tYmluYXRvciBmb3Ig
+        YW5vdGhlciBidXNpbmVzcy48L3A+IDxwPk15IHRhbGsgd2lsbCBiZSBhYm91
+        dCB0aGUgaGlzdG9yeSBvZiBKdWljZXI6IHdoeSBJIHN0YXJ0ZWQgaXQsIGhv
+        dyBJIGdvdCB0aGVyZSwgYW5kIGhvdyBJIGdyZXcgaXQuIEknbGwgYWxzbyBm
+        b2N1cyBvbiB0aGUgYmVuZWZpdHMgb2YgYnVzaW5lc3Mgb3duZXJzaGlwIGFz
+        IG9wcG9zZWQgdG8gdHJhZGl0aW9uYWwgc29mdHdhcmUgZW5naW5lZXJpbmcg
+        am9icy4gRmluYWxseSBJJ2xsIGdpdmUgbXkgYWR2aWNlIHRoYXQgSSd2ZSBs
+        ZWFybmVkIHRocm91Z2ggYnJ1dGUgZm9yY2UgYW5kIHRyaWFsIGFuZCBlcnJv
+        ciBhYm91dCBpZGVhIGdlbmVyYXRpb24sIGJ1aWxkaW5nLCBhbmQgbW9zdCBp
+        bXBvcnRhbnRseSBncm93aW5nIGEgc29mdHdhcmUgYmFzZWQgYnVzaW5lc3Mu
+        PC9wPiA8cD48Yj4yKSBQYXkgTm93ISBTYXZlIEJpZyE8L2I+PC9wPiA8cD5X
+        aGVuIHlvdSBidWlsZCBhIFJhaWxzIHByb2plY3QsIGhvdyBtdWNoIGFoZWFk
+        IGRvIHlvdSB0aGluaz8gQXJlIHlvdSBiZXR0ZXIgb2ZmIG9wdGltaXppbmcg
+        Zm9yIHdoYXQgeW91IG5lZWQgbm93IG9yIGZvciB3aGF0IHlvdSBtaWdodCBu
+        ZWVkIGluIHRoZSBmdXR1cmU/PC9wPiA8cD48Yj4zKSBIYWNraW5nIFBva8Op
+        bW9uIEdvPC9iPjwvcD4gPHA+SG93IHRvIGJlIHRoZSB2ZXJ5IGJlc3QgdGhh
+        dCBubyBvbmUgZXZlciB3YXNcdTIwMjYgd2l0aCBjb2RlITwvcD4gIiwidmlz
+        aWJpbGl0eSI6InB1YmxpYyJ9
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:55 GMT
+- request:
+    method: get
+    uri: https://api.meetup.com/Learn-JavaScript/?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1600'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da65f347fe23c623877a2a29b7ea9837d1470910912; expires=Fri, 11-Aug-17
+        10:21:52 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api2
+      X-Meetup-Request-Id:
+      - 1e5d3106-bd3e-4ede-b431-f355d8761d5a
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '27'
+      X-Ratelimit-Reset:
+      - '9'
+      Etag:
+      - '"8f81905b822a35611585fe80564442b1"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af69628572114-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":18749135,"name":"Learn JavaScript LA","link":"http://www.meetup.com/Learn-JavaScript/","urlname":"Learn-JavaScript","description":"<p>This
+        group was formed in order to encourage aspiring web developers in Los Angeles
+        to advance their learning together :)</p>\n<p>Build incredible products using
+        web development fundamentals in HTML, CSS, and JavaScript. We hold weekly
+        web-dev sessions on Tuesdays at Codesmith. J<span>oin other aspiring web developers
+        and start building amazing products!</span></p>\n<p>Learn callbacks, higher
+        order functions (like map, reduce, filter, forEach) - the underscore and lowdash
+        library array manipulation functions. Learn object oriented programming (how
+        the new keyword works, how prototypes work etc) in JavaScript. Understand
+        closure and scope in JavaScript. All classes are free and have an element
+        of pair-programming - the best way to learn JavaScript and programming</p>\n<p>Hosted
+        at Codesmith HQ (5300 Beethoven St) every week on Tuesdays 6:30pm-8:00pm</p>\n<p>Price:
+        Always free</p>\n<p>------</p>\n<p>Meet the Host: <b>Codesmith</b>&nbsp;(<a
+        href=\"http://codesmith.io/\">codesmith.io</a>)&nbsp;</p>\n<p>Codesmith teaches
+        full stack software engineering in JavaScript through a 12 week immersive
+        program.&nbsp;</p>\n<p>We teach computer science, object-oriented JavaScript,
+        React, Angular, Node, distributed systems and mobile development so our grads
+        can secure mid-to-senior level software engineering positions or launch their
+        own ventures</p>\n<p>The next cohort begins August 17. Apply at&nbsp;<a href=\"http://codesmith.io/apply\">codesmith.io/apply</a>.&nbsp;</p>\n<p>To
+        apply for a scholarship, apply to the program at&nbsp;<a href=\"http://codesmith.io/apply\">codesmith.io/apply</a>.
+        If you''re admitted to the program, you''ll then be able to apply for the
+        scholarship. For further questions email&nbsp;<a href=\"mailto:admissions@codesmith.io\">admissions@codesmith.io</a>&nbsp;</p>","created":1437177508000,"city":"Los
+        Angeles","country":"US","localized_country_name":"USA","state":"CA","join_mode":"open","visibility":"public","lat":33.99,"lon":-118.43,"members":705,"organizer":{"id":28874272,"name":"Will
+        Sentance","bio":"","photo":{"id":253294135,"highres_link":"http://photos3.meetupstatic.com/photos/member/8/5/5/7/highres_253294135.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/member/8/5/5/7/member_253294135.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/member/8/5/5/7/thumb_253294135.jpeg"}},"who":"Engineers","group_photo":{"id":440794913,"highres_link":"http://photos2.meetupstatic.com/photos/event/8/8/6/1/highres_440794913.jpeg","photo_link":"http://photos4.meetupstatic.com/photos/event/8/8/6/1/600_440794913.jpeg","thumb_link":"http://photos2.meetupstatic.com/photos/event/8/8/6/1/thumb_440794913.jpeg"},"key_photo":{"id":449878834,"highres_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/highres_449878834.jpeg","photo_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/600_449878834.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/thumb_449878834.jpeg"},"timezone":"US/Pacific","next_event":{"id":"233036170","name":"JS
+        The Hard Parts (Pt 2/2) Online & Onsite- Closure, Scope and Execution Context","yes_rsvp_count":7,"time":1470965400000,"utc_offset":-25200000},"category":{"id":34,"name":"Tech","shortname":"Tech","sort_name":"Tech"},"photos":[{"id":439888902,"highres_link":"http://photos1.meetupstatic.com/photos/event/7/0/e/6/highres_439888902.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/7/0/e/6/600_439888902.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/7/0/e/6/thumb_439888902.jpeg"},{"id":440040084,"highres_link":"http://photos1.meetupstatic.com/photos/event/5/4/highres_440040084.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/5/4/600_440040084.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/5/4/thumb_440040084.jpeg"},{"id":448339187,"highres_link":"http://photos3.meetupstatic.com/photos/event/4/a/f/3/highres_448339187.jpeg","photo_link":"http://photos3.meetupstatic.com/photos/event/4/a/f/3/600_448339187.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/event/4/a/f/3/thumb_448339187.jpeg"},{"id":449878834,"highres_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/highres_449878834.jpeg","photo_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/600_449878834.jpeg","thumb_link":"http://photos3.meetupstatic.com/photos/event/e/5/d/2/thumb_449878834.jpeg"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:55 GMT
+- request:
+    method: get
+    uri: https://api.meetup.com/Learn-JavaScript/events/233036170?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1251'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd1140f60e4db965cc5be1323aeb4682d1470910913; expires=Fri, 11-Aug-17
+        10:21:53 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api10
+      X-Meetup-Request-Id:
+      - 86cbda2c-ae07-4de1-879b-0537a3ce6186
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '26'
+      X-Ratelimit-Reset:
+      - '8'
+      Etag:
+      - '"9c544c8d5017141705d962656193a1e5"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af699867420d8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoxNDcwMDY0MTQ1MDAwLCJkdXJhdGlvbiI6NzIwMDAwMCwi
+        aWQiOiIyMzMwMzYxNzAiLCJuYW1lIjoiSlMgVGhlIEhhcmQgUGFydHMgKFB0
+        IDIvMikgT25saW5lICYgT25zaXRlLSBDbG9zdXJlLCBTY29wZSBhbmQgRXhl
+        Y3V0aW9uIENvbnRleHQiLCJzdGF0dXMiOiJ1cGNvbWluZyIsInRpbWUiOjE0
+        NzA5NjU0MDAwMDAsInVwZGF0ZWQiOjE0NzAwNjQxNDUwMDAsInV0Y19vZmZz
+        ZXQiOi0yNTIwMDAwMCwid2FpdGxpc3RfY291bnQiOjAsInllc19yc3ZwX2Nv
+        dW50Ijo3LCJ2ZW51ZSI6eyJpZCI6MjM5NzI1NzksIm5hbWUiOiJDb2Rlc21p
+        dGgiLCJsYXQiOjMzLjk3OTQ2OTI5OTMxNjQwNiwibG9uIjotMTE4LjQyMjU0
+        NjM4NjcxODc1LCJyZXBpbm5lZCI6ZmFsc2UsImFkZHJlc3NfMSI6IjUzMDAg
+        QmVldGhvdmVuIFN0cmVldCIsImNpdHkiOiJMb3MgQW5nZWxlcyIsImNvdW50
+        cnkiOiJ1cyIsImxvY2FsaXplZF9jb3VudHJ5X25hbWUiOiJVU0EiLCJ6aXAi
+        OiIiLCJzdGF0ZSI6IkNBIn0sImdyb3VwIjp7ImNyZWF0ZWQiOjE0MzcxNzc1
+        MDgwMDAsIm5hbWUiOiJMZWFybiBKYXZhU2NyaXB0IExBIiwiaWQiOjE4NzQ5
+        MTM1LCJqb2luX21vZGUiOiJvcGVuIiwibGF0IjozMy45OTAwMDE2Nzg0NjY4
+        LCJsb24iOi0xMTguNDMwMDAwMzA1MTc1NzgsInVybG5hbWUiOiJMZWFybi1K
+        YXZhU2NyaXB0Iiwid2hvIjoiRW5naW5lZXJzIn0sImxpbmsiOiJodHRwOi8v
+        d3d3Lm1lZXR1cC5jb20vTGVhcm4tSmF2YVNjcmlwdC9ldmVudHMvMjMzMDM2
+        MTcwLyIsImRlc2NyaXB0aW9uIjoiPHA+VGhpcyB3ZWVrIHdlIGNvbnRpbnVl
+        IG91ciBtaW5pLXNlcmllczogSmF2YXNjcmlwdCAtIFRoZSBIYXJkIFBhcnRz
+        LsKgV2Ugd2lsbCBjb3ZlciBjbG9zdXJlLCBzY29wZSwgYW5kIGV4ZWN1dGlv
+        biBjb250ZXh0IC0gb25lIG9mwqA8aT50aGXCoDwvaT50b3VnaGVzdCBjb25j
+        ZXB0cyBpbiBKYXZhU2NyaXB0PC9wPiA8cD5XZSdsbCBjb3ZlciBjb25jZXB0
+        cyBhbmQgYXBwcm9hY2hlcyB0aGF0IDgwJSBvZiBKYXZhU2NyaXB0IGVuZ2lu
+        ZWVycyBkbyBub3QgdW5kZXJzdGFuZCBidXQgYXJlIGF0IHRoZSBjb3JlIG9m
+        IGV2ZXJ5IHNpbmdsZSBzdWNjZXNzZnVsIGFwcGxpY2F0aW9uLsKgPC9wPiA8
+        cD5UaGlzIGlzIHBvc3NpYmxlIGJlY2F1c2Ugd2UnbGwgdW5kZXJzdGFuZCB0
+        aGUgZXNzZW5jZSBvZiB0aGVzZSB0b3VnaCBjb25jZXB0cyBhbmQgdGhlbiBz
+        d2l0Y2ggaW50byBwYWlyLXByb2dyYW1taW5nIHRocm91Z2ggdGhlIGNoYWxs
+        ZW5nZXMgdG8gY2VtZW50IHRoZSBjb25jZXB0cy48L3A+IDxwPjxpbWcgc3Jj
+        PVwiaHR0cDovL3Bob3RvczEubWVldHVwc3RhdGljLmNvbS9waG90b3MvZXZl
+        bnQvYy9lL2IvOC82MDBfNDQxODMyOTIwLmpwZWdcIiAvPjwvcD4gPHA+VGhl
+        IGV2ZW5pbmcgc2Vzc2lvbiBpcyBjb21wcmlzZWQgb2Y6wqA8L3A+IDxwPk9u
+        c2l0ZTo8L3A+IDxwPjY6MzAgLSA3OjAwcG06IE1lZXQgeW91ciBmdXR1cmUg
+        cGFpciBwcm9ncmFtbWluZyBwYXJ0bmVyLiBPbmxpbmUgLSBBcnJpdmUgdG8g
+        c3RyZWFtIGFuZCBzaWduIGluIHRvIHJlY2VpdmUgcGFpci1wcm9ncmFtbWlu
+        ZyBpbnN0cnVjdGlvbnMuPC9wPiA8cD43OjAwIC0gODowMHBtOiBDb3JlIEph
+        dmFTY3JpcHQgY29uY2VwdCBmb3IgdGhlIGNoYWxsZW5nZSBhbmQgaW50cm9k
+        dWN0aW9uIHRvIHRoZSBzZWNyZXQgaGFjayBmb3IgbGVhcm5pbmcgdG8gY29k
+        ZSAtIHBhaXItcHJvZ3JhbW1pbmcuwqA8L3A+IDxwPjg6MDAgLSAxMDowMHBt
+        OiBQYWlyLXByb2dyYW1taW5nLjwvcD4gPHA+T25saW5lOjwvcD4gPHA+Nzow
+        MHBtIC0gNzozMHBtOiBBcnJpdmUgdG8gc3RyZWFtIGFuZCBzaWduIGluIHRv
+        IHJlY2VpdmUgcGFpci1wcm9ncmFtbWluZyBpbnN0cnVjdGlvbnMuIFRoZSBs
+        aW5rIHRvIHRoZSBldmVudCBpczo8L3A+IDxwPjxhIGhyZWY9XCJodHRwczov
+        L3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXROLVRVcmY4UkNvXCI+PGEgaHJl
+        Zj1cImh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9Vl9oTzVxT2Rq
+        TlVcIiBjbGFzcz1cImVtYmVkZGVkXCI+aHR0cHM6Ly93d3cueW91dHViZS5j
+        b20vd2F0Y2g/dj1WX2hPNXFPZGpOVTwvYT48L2E+PC9wPiA8cD43OjMwIC0g
+        ODowMHBtOiBDb3JlIEphdmFTY3JpcHQgY29uY2VwdCBmb3IgdGhlIGNoYWxs
+        ZW5nZSBhbmQgaW50cm9kdWN0aW9uIHRvIHRoZSBzZWNyZXQgaGFjayBmb3Ig
+        bGVhcm5pbmcgdG8gY29kZSAtIHBhaXItcHJvZ3JhbW1pbmcuwqA8L3A+IDxw
+        Pjg6MDAgLSA5OjMwcG06IFBhaXItcHJvZ3JhbW1pbmcuPC9wPiA8cD5TdGF5
+        IGFmdGVyd2FyZHMgYW5kIGpvaW4gdXMgZm9yIENvZGVzbWl0aCBkcmlua3Mh
+        PC9wPiA8cD5CcmluZyBhIGZyaWVuZCB3aG8nZCBsaWtlIHRvIGJ1aWxkIGFu
+        ZCB5b3UgY2FuIHBhaXIgcHJvZ3JhbSB0b2dldGhlci48L3A+IDxwPlByaWNl
+        OiBBbHdheXMgZnJlZTwvcD4gIiwiaG93X3RvX2ZpbmRfdXMiOiJDb21lIHVw
+        IHRvIHRoZSBQZW50IEhvdXNlIChQSCkgZmxvb3IgLSBMaXZlIHN0cmVhbSBs
+        aW5rOiBodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVZfaE81cU9k
+        ak5VIiwidmlzaWJpbGl0eSI6InB1YmxpYyJ9
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:56 GMT
+- request:
+    method: get
+    uri: https://api.meetup.com/SGVTech/?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:54 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1030'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3c890db83b38c7bedde7edff1f7e86961470910914; expires=Fri, 11-Aug-17
+        10:21:54 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api14
+      X-Meetup-Request-Id:
+      - a85ead5f-b57a-454f-835b-1ca2359e06d1
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '25'
+      X-Ratelimit-Reset:
+      - '8'
+      Etag:
+      - '"6a18a0de111aa37d03484337b8ed4deb"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af69ce21f5053-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":11987382,"name":"San Gabriel Valley Tech","link":"http://www.meetup.com/SGVTech/","urlname":"SGVTech","description":"<p>San
+        Gabriel Valley Tech People (SGVTech) is an umbrella group encompassing the
+        <a href=\"http://www.sgvlug.org/\">San Gabriel Valley Linux User''s Group
+        (SGVLUG)</a>, <a href=\"http://www.sgvhak.org/\">San Gabriel Valley HAK (SGVHAK)</a>,
+        <a href=\"http://loco.ubuntu.com/events/ubuntu-california/1073-pasadena-ubuntu-hour/\">Pasadena
+        Ubuntu Hour</a>.&nbsp; Recent additions have been the <a href=\"http://forums.livecode.com/viewforum.php?f=50\">SoCal
+        LiveCode User Group</a> and the <a href=\"http://infosecsyndicate.weebly.com/\">Infosec
+        Syndicate</a>. We are a community of people interested in topics such as,
+        but not limited to: Linux, open source software, hardware hacking, microcontrollers,
+        security, software and Ubuntu.</p>","created":1389330169000,"city":"Pasadena","country":"US","localized_country_name":"USA","state":"CA","join_mode":"open","visibility":"public","lat":34.15,"lon":-118.14,"members":1011,"organizer":{"id":88913692,"name":"James","bio":"","photo":{"id":253573044,"highres_link":"http://photos4.meetupstatic.com/photos/member/3/2/f/4/highres_253573044.jpeg","photo_link":"http://photos4.meetupstatic.com/photos/member/3/2/f/4/member_253573044.jpeg","thumb_link":"http://photos4.meetupstatic.com/photos/member/3/2/f/4/thumb_253573044.jpeg"}},"who":"SGVTechs","key_photo":{"id":448913638,"highres_link":"http://photos1.meetupstatic.com/photos/event/d/1/8/6/highres_448913638.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/d/1/8/6/600_448913638.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/d/1/8/6/thumb_448913638.jpeg"},"timezone":"US/Pacific","next_event":{"id":"jnlnflyvlbpb","name":"Ubuntu
+        Hour Pasadena","yes_rsvp_count":9,"time":1470963600000,"utc_offset":-25200000},"category":{"id":34,"name":"Tech","shortname":"Tech","sort_name":"Tech"},"photos":[{"id":434677167,"highres_link":"http://photos1.meetupstatic.com/photos/event/9/1/2/f/highres_434677167.jpeg","photo_link":"http://photos1.meetupstatic.com/photos/event/9/1/2/f/600_434677167.jpeg","thumb_link":"http://photos1.meetupstatic.com/photos/event/9/1/2/f/thumb_434677167.jpeg"},{"id":434677196,"highres_link":"http://photos2.meetupstatic.com/photos/event/9/1/4/c/highres_434677196.jpeg","photo_link":"http://photos2.meetupstatic.com/photos/event/9/1/4/c/600_434677196.jpeg","thumb_link":"http://photos4.meetupstatic.com/photos/event/9/1/4/c/thumb_434677196.jpeg"},{"id":434694141,"highres_link":"http://photos2.meetupstatic.com/photos/event/d/3/7/d/highres_434694141.jpeg","photo_link":"http://photos4.meetupstatic.com/photos/event/d/3/7/d/600_434694141.jpeg","thumb_link":"http://photos2.meetupstatic.com/photos/event/d/3/7/d/thumb_434694141.jpeg"},{"id":452768222,"highres_link":"http://photos2.meetupstatic.com/photos/event/2/0/1/e/highres_452768222.jpeg","photo_link":"http://photos2.meetupstatic.com/photos/event/2/0/1/e/600_452768222.jpeg","thumb_link":"http://photos2.meetupstatic.com/photos/event/2/0/1/e/thumb_452768222.jpeg"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:56 GMT
+- request:
+    method: get
+    uri: https://api.meetup.com/SGVTech/events/jnlnflyvlbpb?key=<MEETUP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.meetup.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 10:21:55 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '815'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da0fbe405b97bde71a4656ccdeb13dea21470910914; expires=Fri, 11-Aug-17
+        10:21:54 GMT; path=/; domain=.meetup.com; HttpOnly
+      X-Meetup-Server:
+      - api17
+      X-Meetup-Request-Id:
+      - 9b15583a-3c5c-460f-8f70-72c4fcb7b79b
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '24'
+      X-Ratelimit-Reset:
+      - '7'
+      Etag:
+      - '"25510627c4f1fbfb7df0bde9e5357cb8"'
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2d0af6a15fe907f7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoxNDIzNzc5OTcwMDAwLCJkdXJhdGlvbiI6MzYwMDAwMCwi
+        aWQiOiJqbmxuZmx5dmxicGIiLCJuYW1lIjoiVWJ1bnR1IEhvdXIgUGFzYWRl
+        bmEiLCJyc3ZwX2xpbWl0IjoyMCwic3RhdHVzIjoidXBjb21pbmciLCJ0aW1l
+        IjoxNDcwOTYzNjAwMDAwLCJ1cGRhdGVkIjoxNDU1MTMyODQ4MDAwLCJ1dGNf
+        b2Zmc2V0IjotMjUyMDAwMDAsIndhaXRsaXN0X2NvdW50IjowLCJ5ZXNfcnN2
+        cF9jb3VudCI6OSwidmVudWUiOnsiaWQiOjYyNDg2NjIsIm5hbWUiOiJQZWV0
+        J3MgQ29mZmVlIiwibGF0IjozNC4xMzU1MzYxOTM4NDc2NTYsImxvbiI6LTEx
+        OC4xMzIyNzg0NDIzODI4MSwicmVwaW5uZWQiOmZhbHNlLCJhZGRyZXNzXzEi
+        OiI2MDUgUy4gTGFrZSBBdmVudWUiLCJjaXR5IjoiUGFzYWRlbmEiLCJjb3Vu
+        dHJ5IjoidXMiLCJsb2NhbGl6ZWRfY291bnRyeV9uYW1lIjoiVVNBIiwiemlw
+        IjoiOTExMDYiLCJzdGF0ZSI6IkNBIn0sImdyb3VwIjp7ImNyZWF0ZWQiOjEz
+        ODkzMzAxNjkwMDAsIm5hbWUiOiJTYW4gR2FicmllbCBWYWxsZXkgVGVjaCIs
+        ImlkIjoxMTk4NzM4Miwiam9pbl9tb2RlIjoib3BlbiIsImxhdCI6MzQuMTUw
+        MDAxNTI1ODc4OTA2LCJsb24iOi0xMTguMTM5OTk5Mzg5NjQ4NDQsInVybG5h
+        bWUiOiJTR1ZUZWNoIiwid2hvIjoiU0dWVGVjaHMifSwibGluayI6Imh0dHA6
+        Ly93d3cubWVldHVwLmNvbS9TR1ZUZWNoL2V2ZW50cy8yMzI4MTk3MDMvIiwi
+        ZGVzY3JpcHRpb24iOiI8cD5UaGUgUGFzYWRlbmEgVWJ1bnR1IEhvdXIgbWVl
+        dHMgYXQgNlBNIG9uIHRoZSBzZWNvbmQgVGh1cnNkYXkgb2YgZWFjaCBtb250
+        aC48L3A+IDxwPlBlZXQncyBDb2ZmZWUsIFMuIExha2UgYW5kIENhbGlmb3Ju
+        aWEgQXZlPGJyLz5QYXNhZGVuYTwvcD4gPHA+QSBncm91cCBvZiBhYm91dCBh
+        IGRvemVuIG9mIHVzIHdobyBlbmpveSBVYnVudHUgbWVldCBhdCBQZWV0J3Mg
+        Q29mZmVlIHRvIGRpc2N1c3MgdGhlIGxhdGVzdCBVYnVudHUgbmV3cywgYXBw
+        cywgYW5kIGhlbHAgZWFjaCBvdGhlciB3aXRoIHRyb3VibGVzaG9vdGluZywg
+        ZmluZGluZyB0b29scywgZXRjLiBHb29kIGNvbnZlcnNhdGlvbiwgYW5kIGdv
+        b2QgY29mZmVlIGFuZCBkZXNlcnRzIGFzIHdlbGwuPC9wPiA8cD5BZnRlciB0
+        aGUgVWJ1bnR1IEhvdXIgd2UnbGwgZ28gdG8gdGhlIFNhbiBHYWJyaWVsIFZh
+        bGxleSBMaW51eCBVc2VyIEdyb3VwIG1lZXRpbmcgYXQgN1BNLsKgIEl0IHRl
+        bmRzIHRvIGJlIGhlbGQgYXQgZWl0aGVyIER1LVBhcidzIG9uIFMuIExha2Ug
+        YW5kIENvcmRvdmEsIG9yIGF0IE9wZW5YIG9uIExha2UgYW5kIFdhbG51dC7C
+        oCBTZWUgdGhpcyBtb250aCdzIFNHVkxVRyBtZWV0dXAgZm9yIGxvY2F0aW9u
+        IGFuZCBkZXRhaWxzLjwvcD4gIiwidmlzaWJpbGl0eSI6InB1YmxpYyJ9
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 10:21:57 GMT
+recorded_with: VCR 3.0.3
